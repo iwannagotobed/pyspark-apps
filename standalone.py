@@ -8,7 +8,7 @@ spark = SparkSession \
 
 
 schema = 'id INT, country STRING, hit LONG'
-df = spark.createDataFrame(data=[('1','kr',100),('2','Kora',120),('2','USA',80),(3,'Japan',40)], schema=schema)
+df = spark.createDataFrame(data=[(1,'kr',100),(2,'Kora',120),(3,'USA',80),(4,'Japan',40)], schema=schema)
 print(df.count())
 
 # sleep 10 minute
